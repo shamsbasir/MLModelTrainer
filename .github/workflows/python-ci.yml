@@ -1,6 +1,9 @@
-# .github/workflows/python-ci.yml
+name: Python CI
 
-...
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -27,5 +30,4 @@ jobs:
     - name: Train ML model
       run: |
         poetry run python src/train.py  # Run your model training script
-
 
