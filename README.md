@@ -13,6 +13,7 @@ MLModelTrainer/
 │   │-- __init__.py
 │   │-- train_model.py
 │-- pyproject.toml
+<<<<<<< HEAD
 │-- README.md
 ```
 
@@ -52,7 +53,4 @@ MLModelTrainer/
 
 GitHub Actions have been set up to automate testing and other workflows. Check the `.github/workflows/python-ci.yml` file for configuration details.
 
-Feel free to adjust the project structure and add more details to the README.md to suit your specific project requirements.
-```
 
-You can use this README.md as a starting point for your project's documentation, and customize it further based on your project's specific details and requirements.
