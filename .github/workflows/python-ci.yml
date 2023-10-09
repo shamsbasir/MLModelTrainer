@@ -26,6 +26,6 @@ jobs:
 
     - name: Train ML model
       run: |
-        poetry run python train_model.py  # Run your model training script
+        poetry run python src/train.py  # Run your model training script
 
 
