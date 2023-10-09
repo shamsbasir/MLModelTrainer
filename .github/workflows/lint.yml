@@ -1,0 +1,35 @@
+name: Python Linting Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x  # Replace with your desired Python version
+
+    - name: Install dependencies
+      run: |
+        # Install the 'flake8' linter
+        pip install flake8
+
+    - name: Run Flake8 on src/
+      run: |
+        # Run 'flake8' on the code in the 'src/' folder
+        flake8 src/  # Replace with your linter command and configuration options
+
+    - name: Run Flake8 on tests/
+      run: |
+        # Run 'flake8' on the tests in the 'tests/' folder
+        flake8 tests/  # Replace with your linter command and configuration options
+
