@@ -9,18 +9,18 @@ MLModelTrainer/
 │-- .github/
 │   │-- workflows/
 │   │   │-- python-ci.yml
-│-- my_package/
+│-- src/
 │   │-- __init__.py
-│   │-- train_model.py
+│   │-- train.py
 │-- pyproject.toml
 ```
 
 - `.github/`: GitHub Actions directory.
   - `workflows/`: Contains GitHub Actions workflow configuration.
     - `python-ci.yml`: GitHub Actions workflow YAML file for Python CI.
-- `my_package/`: Package directory for the project.
+- `src/`: Package directory for the project.
   - `__init__.py`: Initialization file for the package.
-  - `train_model.py`: Python script for training the machine learning model.
+  - `train.py`: Python script for training the machine learning model.
 - `pyproject.toml`: Poetry configuration file for managing project dependencies.
 - `README.md`: This readme file.
 
