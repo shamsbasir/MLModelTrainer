@@ -6,4 +6,3 @@ MLModelTrainer/
 │   │-- __init__.py
 │   │-- train_model.py
 │-- pyproject.toml
-
