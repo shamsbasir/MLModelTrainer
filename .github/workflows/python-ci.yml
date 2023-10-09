@@ -1,0 +1,31 @@
+# .github/workflows/python-ci.yml
+
+...
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x  # Choose your desired Python version
+
+    - name: Install dependencies
+      run: |
+        pip install poetry
+        poetry install
+
+    - name: Run tests
+      run: |
+        poetry run pytest  # Replace with your testing command
+
+    - name: Train ML model
+      run: |
+        poetry run python train_model.py  # Run your model training script
+
+
