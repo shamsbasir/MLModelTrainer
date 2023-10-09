@@ -13,8 +13,6 @@ MLModelTrainer/
 │   │-- __init__.py
 │   │-- train_model.py
 │-- pyproject.toml
-<<<<<<< HEAD
-│-- README.md
 ```
 
 - `.github/`: GitHub Actions directory.
