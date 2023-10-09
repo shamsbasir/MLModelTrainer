@@ -42,7 +42,7 @@ MLModelTrainer/
 3. Train the machine learning model:
 
    ```bash
-   poetry run python my_package/train_model.py
+   poetry run python src/train.py
    ```
 
 4. Customize the project as needed and add your machine learning code to `train_model.py`.
