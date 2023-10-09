@@ -6,12 +6,11 @@ def add_numbers(a, b):
     :param b: The second number.
     :return: The sum of 'a' and 'b'.
     """
-    
     return a + b
 
 
 if __name__ == "__main__":
-    # Code inside this block will only run 
+    # Code inside this block will only run
     # when the script is executed directly,
     # not when it's imported as a module.
     num1 = 5
