@@ -9,14 +9,24 @@ jobs:
   lint:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        python-version: [3.9]  # Specify your desired Python version
+        node-version: [16.x]   # Specify Node.js version 16
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.x  # Replace with your desired Python version
+        python-version: ${{ matrix.python-version }}
 
     - name: Install dependencies
       run: |
